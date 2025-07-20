@@ -30,10 +30,7 @@ Buna rağmen:
 
 ## 🧩 Jüriye Kısa Mesajım:
 
-> “Evet, tek başıma kaldım ama fikrim net, AI planım hazır, Sprint 3’te kodlayacağım.”
-
-Bu teslimle sıfırdan bir yapı kurulmuş, teknik yol haritası hazırlanmış ve AI entegrasyonu için gerçekçi bir temel atılmıştır.
-
+Sprint 2 sürecinde proje tek kişilik olarak yeniden yapılandırılmıştır. Bu nedenle bu sprintte öncelikli olarak mimari planlama, AI modeli seçimi ve kullanıcı akışı üzerinde çalışılmıştır. Teknik geliştirme Sprint 3’te başlayacaktır.
 ---
 
 ## 💡 Kullanıcı Deneyimi Özeti
