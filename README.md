@@ -1,80 +1,68 @@
-# 🧠 BioMentor – AI Destekli Kişisel Sağlık Asistanı  
-**YZTA Bootcamp | 2. Sprint Teslimi**
+🧠 BioMentor – AI Destekli Kişisel Sağlık Asistanı
+YZTA Bootcamp | 3. Sprint Final Teslimi
 
----
+🎯 Proje Vizyonu
+BioMentor, bireylerin kişisel sağlık hedeflerine uygun olarak yapay zekâ destekli öneriler sunan bir asistan uygulamasıdır.
 
-## 🎯 Proje Vizyonu
+Başlıca özellikler:
+✅ Kullanıcı, hedefini seçip 7 günlük kişisel plan alabilir.
+✅ Mentor’e Sor özelliğiyle doğal dilde soru sorabilir.
+✅ Kendini Test Et ile 10 soruluk mini test doldurabilir.
 
-**BioMentor**, bireylerin kan tahlili sonuçlarını analiz ederek eksik çıkan değerler (örneğin B12, D vitamini, demir vb.) için **ilaçsız**, **doğal**, **yaşam tarzına uygun** ve **bilimsel kaynaklı** öneriler sunan bir yapay zekâ destekli sağlık destek sistemidir.
+🚀 Sprint 3'te Tamamlananlar
+✔️ Tam çalışan frontend-backend entegrasyonu sağlandı.
+✔️ FastAPI tabanlı backend kuruldu, Gemini Pro API entegre edildi.
+✔️ Hedef seçme → 7 günlük plan oluşturma özelliği tamamlandı.
+✔️ Mentor’e Sor ekranı geliştirildi.
+✔️ Kendini Test Et özelliği eklendi.
+✔️ Arayüz, TailwindCSS ile modern ve animasyonlu hâle getirildi.
 
-Uygulama, hem otomatik analiz motoru hem de kullanıcı ile doğal dilde konuşabilen bir AI modülünü bünyesinde barındırır. Bu sayede kullanıcılar sadece verilerini girerek öneri almaz, aynı zamanda "kefir içemiyorum, bana alternatif probiyotik önerir misin?" gibi kişisel sorular da yöneltebilir.
+📸 Uygulama Görselleri
+Ana ekran
 
----
+Hedef seçme ve plan ekranı
 
-## 🛠️ 2. Sprint Özeti
+Mentor’e Sor ekranı
 
-Sprint 2 sürecinde proje teknik olarak ilerletilememiş olabilir; **ancak fikrin temelleri sağlamlaştırılmış, teknoloji planlaması yapılmış ve proje yönü netleştirilmiştir.**  
-Üstelik proje, bu sprint sırasında **tek kişilik hale gelmiştir.**
+Kendini Test Et ekranı
 
-Buna rağmen:
+(Ekran görüntülerini buraya ekleyeceksin.)
 
-✅ Proje fikri güncellendi ve netleştirildi  
-✅ Kullanıcı akışı, senaryolar ve teknik yapılar belirlendi  
-✅ Kullanılacak yapay zekâ modeli (Gemini Pro API) kararlaştırıldı  
-✅ AI fonksiyonları için `features/qa_chat.py` dosyası oluşturuldu  
-✅ README ve dökümantasyon içerikleri hazırlandı
+📂 Proje Yapısı
+bash
+Kopyala
+Düzenle
+BioMentor/
+│── backend/
+│   └── app.py           # FastAPI backend
+│── index.html           # Frontend ana dosya
+│── requirements.txt     # Gerekli kütüphaneler
+🔄 Sprint 2'den Sprint 3'e Gelişim
+📌 Sprint 2: Planlama, mimari ve teknoloji seçimleri yapılmıştı.
+📌 Sprint 3: Çalışan bir prototip tamamlandı.
 
-🟡 Kodlama süreci Sprint 3’e ertelendi.
+📉 Çıkarılan Özellikler:
 
----
+Tahlil dosyası (PDF) yükleme ve otomatik analiz
 
-## 🧩 Jüriye Kısa Mesajım:
+Veritabanına kullanıcı kayıt ve geri bildirim kaydı
 
-Sprint 2 sürecinde proje tek kişilik olarak yeniden yapılandırılmıştır. Bu nedenle bu sprintte öncelikli olarak mimari planlama, AI modeli seçimi ve kullanıcı akışı üzerinde çalışılmıştır. Teknik geliştirme Sprint 3’te başlayacaktır.
----
+Oturum yönetimi
 
-## 💡 Kullanıcı Deneyimi Özeti
+Bu özellikler gelecek aşamada eklenmek üzere ertelendi.
 
-- Kullanıcı tahlil verisini (PDF ya da manuel) sisteme girer  
-- Sistem, eksik değerleri referans aralıklarıyla kıyaslayarak tespit eder  
-- Her eksik değer için AI modeli (Gemini) tarafından öneriler üretilir  
-- Kullanıcı ayrıca doğal dilde sorular sorabilir ve kişiselleştirilmiş öneriler alabilir  
-- Önerilerin altında mutlaka bilimsel kaynak ve “tıbbi tavsiye değildir” uyarısı bulunur  
-- Kullanıcı, önerilere geri bildirim vererek sistemin öğrenmesini destekler  
+📌 Kullanıcı Akışı
+1️⃣ Ana ekran → "Hedefini Seç", "Mentor’e Sor", "Kendini Test Et"
+2️⃣ Hedefini Seç → 7 günlük plan oluşturulur.
+3️⃣ Mentor’e Sor → Kullanıcı doğal dilde soru sorar, AI yanıt verir.
+4️⃣ Kendini Test Et → 10 soruluk test doldurulur, ardından basit bir özet sonucu gösterilir.
 
----
+🤖 Kullanılan Teknolojiler
+Katman	Teknoloji
+Frontend	HTML, CSS (Tailwind), JS
+Backend	Python (FastAPI, Uvicorn)
+AI	Google Gemini Pro API
 
-## 🤖 Kullanılan / Kullanılacak Teknolojiler
-
-| Katman | Teknoloji |
-|--------|-----------|
-| Frontend | React.js, TailwindCSS |
-| Backend | Python, FastAPI |
-| Veritabanı | PostgreSQL |
-| AI | Google Gemini Pro API |
-| Veri Analizi | Pandas, NumPy |
-| OCR | pdfplumber, Tesseract |
-| Prototip | Streamlit / Gradio (isteğe bağlı) |
-
----
-
-## 📂 Mevcut Dosya ve Yapı
-
-- `README.md` → Proje açıklaması ve dökümantasyon  
-- `features/qa_chat.py` → AI öneri fonksiyonu başlangıç dosyası  
-- `requirements.txt` → Kullanılacak temel kütüphaneler (örnek: `requests`)  
-
----
-
-## 🧭 Bir Sonraki Sprint’te (Sprint 3)
-
-- Kullanıcıdan gelen tahlil değerlerini referanslarla analiz edecek altyapı kurulacak  
-- Gemini API ile öneriler dinamik olarak üretilecek  
-- Manuel değer girişi formu ve öneri ekranı prototip olarak tasarlanacak  
-- Doğal dilde soru-cevap sistemi aktif hâle getirilecek  
-- AI cevaplarının doğruluğu ve kaynakları test edilecek  
-
----
-
-Bu sprint bir geçiş dönemiydi — koddan çok planlama sprintiydi.  
-Ama Sprint 3’te projenin ilk çalışan modüllerini teslim edeceğim.
+🔜 Sonraki Adımlar
+✅ Render veya benzeri platformda deploy edilecek.
+✅ Küçük hatalar (örn. test sonucu özeti, API yanıt formatı) düzeltilecek.
