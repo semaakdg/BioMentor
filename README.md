@@ -18,9 +18,9 @@ BioMentor, bireylerin kişisel sağlık hedeflerine yönelik, bilimsel temelli v
 
 ## 🚀 Sprint 3'te Tamamlananlar
 
-✔️ FastAPI tabanlı backend ve TailwindCSS tabanlı frontend tamamlandı.
-✔️ Gemini Pro API entegre edilerek AI tabanlı öneriler sağlandı.
-✔️ Hedef seçme → 7 günlük plan oluşturma özelliği geliştirildi.
+✔️ FastAPI tabanlı backend ve TailwindCSS tabanlı frontend tamamlandı. 
+✔️ Gemini Pro API entegre edilerek AI tabanlı öneriler sağlandı. 
+✔️ Hedef seçme → 7 günlük plan oluşturma özelliği geliştirildi. 
 ✔️ Mentor’e Sor ve Kendini Test Et ekranları eklendi.
 ✔️ Modern ve animasyonlu bir arayüz tasarlandı.
 
