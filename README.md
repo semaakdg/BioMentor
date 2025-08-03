@@ -9,7 +9,9 @@ BioMentor, bireylerin kişisel sağlık hedeflerine yönelik, bilimsel temelli v
 ### Başlıca Özellikler
 
 ✅ Kullanıcı hedefini seçip 7 günlük kişisel plan alabilir.
+
 ✅ Mentor’e Sor özelliğiyle doğal dilde soru sorabilir.
+
 ✅ Kendini Test Et bölümünde 10 soruluk mini bir test doldurabilir.
 
 ---
