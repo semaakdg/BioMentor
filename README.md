@@ -1,66 +1,82 @@
-🧠 BioMentor – AI Destekli Kişisel Sağlık Asistanı
+# 🧠 BioMentor – AI Destekli Kişisel Sağlık Asistanı
+
 YZTA Bootcamp | 3. Sprint Final Teslimi
 
-🎯 Proje Vizyonu
-BioMentor, bireylerin kişisel sağlık hedeflerine uygun olarak yapay zekâ destekli öneriler sunan bir asistan uygulamasıdır.
+## 🎯 Proje Vizyonu
 
-Başlıca özellikler:
-✅ Kullanıcı, hedefini seçip 7 günlük kişisel plan alabilir.
+BioMentor, bireylerin kişisel sağlık hedeflerine yönelik, bilimsel temelli ve ilaçsız öneriler sunan bir yapay zekâ destekli asistan uygulamasıdır.
+
+### Başlıca Özellikler
+
+✅ Kullanıcı hedefini seçip 7 günlük kişisel plan alabilir.
 ✅ Mentor’e Sor özelliğiyle doğal dilde soru sorabilir.
-✅ Kendini Test Et ile 10 soruluk mini test doldurabilir.
+✅ Kendini Test Et bölümünde 10 soruluk mini bir test doldurabilir.
 
-🚀 Sprint 3'te Tamamlananlar
-✔️ Tam çalışan frontend-backend entegrasyonu sağlandı.
-✔️ FastAPI tabanlı backend kuruldu, Gemini Pro API entegre edildi.
-✔️ Hedef seçme → 7 günlük plan oluşturma özelliği tamamlandı.
-✔️ Mentor’e Sor ekranı geliştirildi.
-✔️ Kendini Test Et özelliği eklendi.
-✔️ Arayüz, TailwindCSS ile modern ve animasyonlu hâle getirildi.
+---
 
-📸 Uygulama Görselleri
-Ana ekran
+## 🚀 Sprint 3'te Tamamlananlar
 
-Hedef seçme ve plan ekranı
+✔️ FastAPI tabanlı backend ve TailwindCSS tabanlı frontend tamamlandı.
+✔️ Gemini Pro API entegre edilerek AI tabanlı öneriler sağlandı.
+✔️ Hedef seçme → 7 günlük plan oluşturma özelliği geliştirildi.
+✔️ Mentor’e Sor ve Kendini Test Et ekranları eklendi.
+✔️ Modern ve animasyonlu bir arayüz tasarlandı.
 
-Mentor’e Sor ekranı
+---
 
-Kendini Test Et ekranı
+## 📂 Proje Yapısı
 
-📂 Proje Yapısı
-bash
-Kopyala
-Düzenle
+```
 BioMentor/
 │── backend/
-│   └── app.py           # FastAPI backend
-│── index.html           # Frontend ana dosya
-│── requirements.txt     # Gerekli kütüphaneler
-🔄 Sprint 2'den Sprint 3'e Gelişim
-📌 Sprint 2: Planlama, mimari ve teknoloji seçimleri yapılmıştı.
-📌 Sprint 3: Çalışan bir prototip tamamlandı.
+│   └── app.py          # FastAPI backend
+│── index.html          # Frontend ana dosya
+│── requirements.txt    # Kullanılan kütüphaneler
+```
 
-📉 Çıkarılan Özellikler:
+---
 
-Tahlil dosyası (PDF) yükleme ve otomatik analiz
+## 🔄 Sprint 2'den Sprint 3'e Gelişim
 
-Veritabanına kullanıcı kayıt ve geri bildirim kaydı
+📌 Sprint 2’de mimari planlama, teknoloji seçimi ve akış tasarımı yapılmıştı.
+📌 Sprint 3’te çalışan bir prototip tamamlandı.
 
-Oturum yönetimi
+---
 
-Bu özellikler gelecek aşamada eklenmek üzere ertelendi.
+## 📉 Çıkarılan Özellikler ve Nedenleri
 
-📌 Kullanıcı Akışı
+1️⃣ **Tahlil dosyası yükleme ve otomatik analiz**
+➡️ KVKK ve veri güvenliği nedeniyle bu özellik bu sprintte devre dışı bırakıldı.
+
+2️⃣ **Veritabanı ve kullanıcı kayıt sistemi**
+➡️ Tek kişilik yürütülen proje için bu sprintte öncelik temel özelliklere verildi.
+
+3️⃣ **Oturum yönetimi (login/logout)**
+➡️ Kullanıcı kaydı olmadığı için bu özellik de ertelendi.
+
+---
+
+## 📌 Kullanıcı Akışı
+
 1️⃣ Ana ekran → "Hedefini Seç", "Mentor’e Sor", "Kendini Test Et"
 2️⃣ Hedefini Seç → 7 günlük plan oluşturulur.
 3️⃣ Mentor’e Sor → Kullanıcı doğal dilde soru sorar, AI yanıt verir.
-4️⃣ Kendini Test Et → 10 soruluk test doldurulur, ardından basit bir özet sonucu gösterilir.
+4️⃣ Kendini Test Et → 10 soruluk test doldurulur, ardından özet sonuç gösterilir.
 
-🤖 Kullanılan Teknolojiler
-Katman	Teknoloji
-Frontend	HTML, CSS (Tailwind), JS
-Backend	Python (FastAPI, Uvicorn)
-AI	Google Gemini Pro API
+---
 
-🔜 Sonraki Adımlar
-✅ Render veya benzeri platformda deploy edilecek.
-✅ Küçük hatalar (örn. test sonucu özeti, API yanıt formatı) düzeltilecek.
+## 🤖 Kullanılan Teknolojiler
+
+| Katman   | Teknoloji                 |
+| -------- | ------------------------- |
+| Frontend | HTML, CSS (Tailwind), JS  |
+| Backend  | Python (FastAPI, Uvicorn) |
+| AI       | Google Gemini Pro API     |
+
+---
+
+## 🔜 Sonraki Adımlar
+
+✅ Render veya benzeri platformda canlıya alınacak.
+✅ Test sonucu özeti ve AI yanıt formatı geliştirilecek.
+✅ KVKK uyumlu şekilde tahlil yükleme ve kullanıcı kayıt özellikleri eklenecek.
