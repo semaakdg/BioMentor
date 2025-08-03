@@ -26,8 +26,6 @@ Mentor’e Sor ekranı
 
 Kendini Test Et ekranı
 
-(Ekran görüntülerini buraya ekleyeceksin.)
-
 📂 Proje Yapısı
 bash
 Kopyala
